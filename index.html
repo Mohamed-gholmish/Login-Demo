@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>log in</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container p-5">
+      <div class="content bg-info-subtle w-75 h-50 mt-5 p-4 text-center mx-auto">
+        <h1>smart Login System</h1>
+        <div class="form-group vstack gap-4">
+         
+          <input
+            id="signInEmail"
+            type="email"
+            class="form-control border-dark-subtle"
+            placeholder="Enter your email"
+            
+          />
+
+ <input
+            id="signInPassword"
+            type="password"
+            class="form-control border-2 border-dark-subtle"
+            placeholder="Enter your password"
+          />
+
+          <div id="userStatus"></div>
+         
+
+          <button id="signInBtn" class="btn btn-outline-primary mt-2">
+           Log in
+          </button>
+          <div class="haveAccount text-white">
+            <span>You have an account?</span
+            ><span
+              ><a href="signUp.html" class="text-decoration-none text-white">
+                Sign Up</a
+              ></span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+      <script src="./js/practice.js"></script>
+  </body>
+
+
+</html>
