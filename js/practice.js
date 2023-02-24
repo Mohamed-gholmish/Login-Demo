@@ -17,7 +17,7 @@ var users=[];
 // console.log(baseURL);
 
 
-// changed -> staged -> commited
+// changed -> staged -> commited -> changed
 
 // ----when start
 if((localStorage.getItem("users"))!==null){
