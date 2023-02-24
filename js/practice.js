@@ -2,10 +2,10 @@ var logInPassword=document.querySelector('#signInPassword');
 var logInEmail=document.querySelector('#signInEmail');
 var logInBtn=document.querySelector('#signInBtn');
 
-var signUpname=document.querySelector('#signUpName');
-var signUpemail=document.querySelector('#signUpEmail');
-var signUppassword=document.querySelector('#signUpPassword');
-var signUpBtn=document.querySelector("#signUpBtn");
+let signUpname =document.querySelector('#signUpName');
+let signUpemail=document.querySelector('#signUpEmail');
+let signUppassword=document.querySelector('#signUpPassword');
+let signUpBtn=document.querySelector("#signUpBtn");
 var logOutBtn=document.querySelector("#logOutBtn");
 var users=[];
 //  عاوز اعرف شرح الكود د وازاي انقل بين الصفحان وبعضها كده
@@ -15,7 +15,15 @@ var users=[];
 //     baseURL += '/' + pathparts[i]
 // }
 // console.log(baseURL);
+// var -> scrope class and function not block 
+// let -> function and class and block 
 
+// if(name == "ziad"){
+//  let z = "dfdf"
+//}
+
+// the "main" branch is the production one 
+// it is the stable and usable code in your project
 
 // changed -> staged -> commited -> changed
 
@@ -118,14 +126,16 @@ function searchUser(){
   var result = users.filter(function(el){
       return  el.userEmail===readExistUser().userEmail&&el.userPassword===readExistUser().userPassword;
     });
-  if(result.length==0){
+  if(result.length === 0){
      return false;
   }
-  else{ return true;}
+  else{
+     return true;
+    }
   }
 
   // ------go to home.html file
-function  gotoHome(){
+function gotoHome(){
   return new Promise(function(){
  window.location.href = "/home.html";
      
